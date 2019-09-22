@@ -1,0 +1,55 @@
+$og-text-font-family: $og-theme-font-family;
+$og-text-base-font-size: $og-theme-base-font-size;
+
+// Data for each Type Style defined in the Style Sheet.
+$og-font-size-data: (
+  biggest: og-rem(96px),
+  bigger: og-rem(80px),
+  big: og-rem(64px),
+  xxxxlarge: og-rem(48px),
+  xxxlarge: og-rem(40px),
+  xxlarge: og-rem(32px),
+  xlarge: og-rem(24px),
+  large: og-rem(20px),
+  medium: og-rem(16px),
+  small: og-rem(14px),
+  xsmall: og-rem(12px)
+) !default;
+
+// Data for each Type Style defined in the Style Sheet.
+$og-line-height-data: (
+  biggest: 7.25rem,
+  bigger: 6rem,
+  big: 5rem,
+  xxxxlarge: 3.75rem,
+  xxxlarge: 3rem,
+  xxlarge: 2.5rem,
+  xlarge: 1.875rem,
+  large: 1.5rem,
+  medium: 1.25rem,
+  small: 1.125rem,
+  xsmall: 1rem
+) !default;
+
+// Data for each Type Style defined in the Style Sheet.
+$og-letter-spacing-data: (
+  biggest: -0.6,
+  bigger: -0.5,
+  big: -0.4,
+  xxxxlarge: 0,
+  xxxlarge: 0,
+  xxlarge: 0,
+  xlarge: 0,
+  large: 0,
+  medium: 0,
+  small: 0,
+  xsmall: 0
+) !default;
+
+// Data for each Type Style defined in the Style Sheet.
+$og-font-weight-data: (
+  bold: 600,
+  semibold: 500,
+  regular: 400,
+  light: 200
+) !default;

@@ -1,0 +1,108 @@
+.wrapper-default {
+  margin: 0;
+  padding: $og-space-32 2.5rem;
+  background-color: var(--canvas);
+}
+
+p {
+  margin: .5rem 0;
+  max-width: 64ch;
+}
+
+strong {
+  font-weight: og-font-weight(bold);
+}
+
+.caption {
+  margin: .75rem 0 2.5rem 0;
+  padding: .5rem .75rem;
+  border-radius: .25rem;
+  font-size: .875rem;
+  font-weight: 600;
+  color: og-color(text, secondary);
+  background-color: rgba(0,0,0,.08);
+  border-radius: .25rem;
+  max-width: none;
+}
+
+/* Semantic groups */
+
+.text a {
+  text-decoration: underline;
+}
+
+.text a:hover {
+  cursor: pointer;
+}
+
+.heading a {
+  text-decoration: none;
+}
+
+.heading a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.display a {
+  text-decoration: none;
+}
+
+.display a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.display a:active {
+  text-decoration: none;
+}
+
+/* Text colors */
+
+.primary-alt-link a {
+  color: var(--link-alt);
+}
+
+.primary a:active, .secondary a:active {
+  color: var(--link-active);
+}
+
+.primary-alt-link a:active {
+  color: var(--text-primary);
+}
+
+
+/* in-dark STYLES */
+
+.wrapper-in-dark {
+  margin: 0;
+  padding: 2rem 2.5rem;
+  background-color: og-color(background, canvas-dark);
+}
+
+.caption-in-dark {
+  margin: .75rem 0 2.5rem 0;
+  padding: .5rem .75rem;
+  border-radius: .25rem;
+  font-size: .875rem;
+  font-weight: 600;
+  color: og-color(text, secondary-in-dark);
+  background-color: rgba(255,255,255,.12);
+  border-radius: .25rem;
+  max-width: none;
+}
+
+
+/*                */
+/* in-dark STYLES */
+/*                */
+
+/* in-dark text colors */
+
+.primary-in-dark-alt-link a {
+  color: var(--link-alt-in-dark);
+}
+
+.primary-in-dark-alt-link a:active {
+  color: var(--link-alt-in-dark-active);
+}

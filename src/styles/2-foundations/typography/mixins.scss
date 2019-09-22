@@ -1,0 +1,174 @@
+
+/// Returns desired styles for a given typography style.
+///
+/// @param {String} $weight - light, normal, semibold, bold.
+
+@mixin og-text-style-display-biggest($weight: light) {
+  font-size:   og-font-size(biggest);
+  line-height: og-line-height(biggest);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(biggest);
+}
+
+@mixin og-text-style-display-bigger($weight: light) {
+  font-size:   og-font-size(bigger);
+  line-height: og-line-height(bigger);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(bigger);
+}
+
+@mixin og-text-style-display-big($weight: light) {
+  font-size:   og-font-size(big);
+  line-height: og-line-height(big);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(big);
+}
+
+@mixin og-text-style-heading-xxxxl($weight: bold) {
+  font-size:   og-font-size(xxxxlarge);
+  line-height: og-line-height(xxxxlarge);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(xxxxlarge);
+}
+
+@mixin og-text-style-heading-xxxl($weight: bold) {
+  font-size:   og-font-size(xxxlarge);
+  line-height: og-line-height(xxxlarge);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(xxxlarge);
+}
+
+@mixin og-text-style-heading-xxl($weight: bold) {
+  font-size:   og-font-size(xxlarge);
+  line-height: og-line-height(xxlarge);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(xxlarge);
+}
+
+@mixin og-text-style-heading-xl($weight: bold) {
+  font-size:   og-font-size(xlarge);
+  line-height: og-line-height(xlarge);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(xlarge);
+}
+
+@mixin og-text-style-heading-l($weight: bold) {
+  font-size:   og-font-size(large);
+  line-height: og-line-height(large);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(large);
+}
+
+@mixin og-text-style-heading-m($weight: bold) {
+  font-size:   og-font-size(medium);
+  line-height: og-line-height(medium);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(medium);
+}
+
+@mixin og-text-style-heading-s($weight: bold) {
+  font-size:   og-font-size(small);
+  line-height: og-line-height(small);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(small);
+}
+
+@mixin og-text-style-text-l($weight: normal) {
+  font-size:   og-font-size(large);
+  line-height: og-line-height(large);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(large);
+}
+
+@mixin og-text-style-text-l-open($weight: normal) {
+  font-size:   og-font-size(large);
+  line-height: og-line-height(xlarge);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(large);
+}
+
+@mixin og-text-style-text-m($weight: normal) {
+  font-size:   og-font-size(medium);
+  line-height: og-line-height(medium);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(medium);
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+@mixin og-text-style-text-m-open($weight: normal) {
+  font-size:   og-font-size(medium);
+  line-height: og-line-height(large);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(medium);
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+@mixin og-text-style-text-s($weight: normal) {
+  font-size:   og-font-size(small);
+  line-height: og-line-height(small);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(small);
+}
+
+@mixin og-text-style-text-s-open($weight: normal) {
+  font-size:   og-font-size(small);
+  line-height: og-line-height(medium);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(small);
+}
+
+@mixin og-text-style-text-xs($weight: normal) {
+  font-size:   og-font-size(xsmall);
+  line-height: og-line-height(xsmall);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(small);
+}
+
+@mixin og-text-style-text-xs-open($weight: normal) {
+  font-size:   og-font-size(xsmall);
+  line-height: og-line-height(small);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  letter-spacing: og-letter-spacing(s);
+}
+
+@mixin og-text-style-link($weight: normal) {
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+  text-decoration: none;
+  letter-spacing: og-letter-spacing(link);
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin og-list-text-style($weight: normal) {
+  font-size:   og-font-size(list);
+  font-weight: og-font-weight($weight);
+  font-family: $og-text-font-family;
+}

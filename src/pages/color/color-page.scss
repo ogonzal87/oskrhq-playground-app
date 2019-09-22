@@ -1,0 +1,284 @@
+$specimen-in-dark-background: og-color(background, canvas-dark);
+
+.color-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: $og-space-16;
+  grid-row-gap: $og-space-16;
+  justify-items: center;
+}
+
+.color-specimen {
+  padding: $og-space-08;
+  width: $og-space-96;
+  height: $og-space-96;
+  @include og-text-style-text-xs();
+}
+
+
+//Backgrounds
+.background-brand {
+  background: og-color(background, brand);
+}
+.background-brand-active {
+  background: og-color(background, brand-active)
+}
+.background-brand-hover {
+  background: og-color(background, brand-hover)
+}
+.background-brand-in-dark {
+  background: og-color(background,brand-in-dark);
+}
+.background-brand-in-dark-active {
+  background: og-color(background,brand-in-dark-active)
+}
+.background-brand-in-dark-hover {
+  background: og-color(background,brand-in-dark-hover)
+}
+.background-canvas {
+  background: og-color(background, canvas)
+}
+.background-canvas-tinted {
+  background: og-color(background, canvas-tinted)
+}
+.background-canvas-shaded {
+  background: og-color(background, canvas-shaded)
+}
+.background-canvas-dark {
+  background: og-color(background, canvas-dark);
+}
+.background-scrim {
+  background: og-color(background, scrim)
+}
+
+
+// Text
+.text-primary {
+  color: og-color(text, primary);
+}
+.text-primary-active {
+  
+}
+.text-primary-disabled {
+  color: og-color(text, primary-disabled);
+}
+.text-primary-in-dark {
+  color: og-color(text, primary-in-dark);
+  background: $specimen-in-dark-background;
+}
+.text-primary-in-dark-active {
+  
+}
+.text-primary-in-dark-disabled {
+  color: og-color(text, primary-in-dark-disabled);
+  background: $specimen-in-dark-background;
+}
+.text-secondary {
+  color: og-color(text, secondary);
+}
+.text-secondary-active {
+  
+}
+.text-secondary-disabled {
+  
+}
+.text-secondary-in-dark {
+  color: og-color(text, secondary-in-dark);
+  background: $specimen-in-dark-background;
+}
+.text-secondary-in-dark-active {
+  
+}
+.text-secondary-in-dark-disabled {
+
+}
+
+.text-link {
+  color: og-color(text, link);
+}
+.text-link-active {
+  color: og-color(text, link-active);
+}
+
+.text-link-in-dark {
+  color: og-color(text, link-in-dark);
+  background: $specimen-in-dark-background;
+}
+.text-link-in-dark-active {
+  color: og-color(text, link-in-dark-active);
+  background: $specimen-in-dark-background;
+}
+.text-link-in-dark-disabled {
+
+}
+
+
+.text-negative {
+  color: og-color(text, negative);
+}
+.text-negative-active {
+  color: og-color(text, negative-active);
+  
+}
+.text-negative-disabled {
+  
+}
+.text-negative-in-dark {
+  color: og-color(text, negative-in-dark);
+  background: $specimen-in-dark-background;
+}
+.text-negative-in-dark-active {
+  color: og-color(text, negative-in-dark-active);
+  background: $specimen-in-dark-background;
+}
+.text-negative-in-dark-disabled {
+
+}
+
+
+.text-positive {
+  color: og-color(text, positive);
+}
+.text-positive-active {
+  color: og-color(text, positive-active);
+  
+}
+.text-positive-disabled {
+  
+}
+.text-positive-in-dark {
+  color: og-color(text, positive-in-dark);
+  background: $specimen-in-dark-background;
+}
+.text-positive-in-dark-active {
+  color: og-color(text, positive-in-dark-active);
+  background: $specimen-in-dark-background;
+}
+.text-positive-in-dark-disabled {
+
+}
+
+
+.text-info {
+  color: og-color(text, info);
+}
+.text-info-active {
+  color: og-color(text, info-active);
+  
+}
+.text-info-disabled {
+  
+}
+.text-info-in-dark {
+  color: og-color(text, info-in-dark);
+  background: $specimen-in-dark-background;
+}
+.text-info-in-dark-active {
+  color: og-color(text, info-in-dark-active);
+  background: $specimen-in-dark-background;
+}
+.text-info-in-dark-disabled {
+
+}
+
+
+
+// Borders
+.border-specimen-in-dark {
+  width: $og-space-128;
+  height: $og-space-128;
+  background: $specimen-in-dark-background;
+  @include og-center();
+}
+
+.border-primary {
+  @include og-border(thin, primary, solid);
+}
+.border-primary-in-dark {
+  @include og-border(thin, primary-in-dark, solid);
+}
+
+.border-secondary {
+  @include og-border(thin, secondary, solid);
+}
+.border-secondary-in-dark {
+  @include og-border(thin, secondary-in-dark, solid);
+}
+
+.border-secondary {
+  @include og-border(thin, secondary, solid);
+}
+.border-secondary-in-dark {
+  @include og-border(thin, secondary-in-dark, solid);
+}
+
+.border-brand {
+  @include og-border(thin, brand, solid);
+}
+.border-brand-in-dark {
+  @include og-border(thin,brand-in-dark, solid);
+}
+
+
+
+//Icon
+.icon-default {
+  svg {
+    path{
+      fill: og-color(icon, default);
+    }
+  }
+}
+.icon-default-in-dark {
+  background: $specimen-in-dark-background;
+  svg {
+    path{
+      fill: og-color(icon, default-in-dark);
+    }
+  }
+}
+.icon-positive {
+  svg {
+    path{
+      fill: og-color(icon, positive);
+    }
+  }
+}
+.icon-positive-in-dark {
+  background: $specimen-in-dark-background;
+  svg {
+    path{
+      fill: og-color(icon, positive-in-dark);
+    }
+  }
+}
+.icon-negative {
+  svg {
+    path{
+      fill: og-color(icon, negative);
+    }
+  }
+}
+.icon-negative-in-dark {
+  background: $specimen-in-dark-background;
+  svg {
+    path{
+      fill: og-color(icon, negative-in-dark);
+    }
+  }
+}
+.icon-info {
+  svg {
+    path{
+      fill: og-color(icon, info);
+    }
+  }
+}
+.icon-info-in-dark {
+  background: $specimen-in-dark-background;
+  svg {
+    path{
+      fill: og-color(icon, info-in-dark);
+    }
+  }
+}

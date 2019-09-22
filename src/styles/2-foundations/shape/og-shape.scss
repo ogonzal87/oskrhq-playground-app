@@ -1,0 +1,105 @@
+$og-shape-radius-small: og-rem(4px);
+$og-shape-radius-medium: og-rem(8px);
+$og-shape-radius-large: og-rem(16px);
+$og-shape-radius-xlarge: og-rem(24px);
+
+$og-shape-attached-top-default: 0 0 $og-shape-radius-small $og-shape-radius-small;
+$og-shape-attached-top-larger-screen: 0 0 $og-shape-radius-medium $og-shape-radius-medium;
+
+$og-shape-attached-bottom-default: $og-shape-radius-small $og-shape-radius-small 0 0;
+$og-shape-attached-bottom-larger-screen: $og-shape-radius-medium $og-shape-radius-medium 0 0;
+
+$og-shape-attached-left-default: 0 $og-shape-radius-small $og-shape-radius-small 0;
+$og-shape-attached-left-larger-screen: 0 $og-shape-radius-medium $og-shape-radius-medium 0;
+
+$og-shape-attached-right-default: $og-shape-radius-small 0 0 $og-shape-radius-small;
+$og-shape-attached-right-larger-screen: $og-shape-radius-medium 0 0 $og-shape-radius-medium;
+
+$og-shape-attributed-top-left-default: 0 $og-shape-radius-small $og-shape-radius-small $og-shape-radius-small;
+$og-shape-attributed-top-left-larger-screen: 0 $og-shape-radius-medium $og-shape-radius-medium $og-shape-radius-medium;
+
+$og-shape-attributed-top-right-default: $og-shape-radius-small 0 $og-shape-radius-small $og-shape-radius-small;
+$og-shape-attributed-top-right-larger-screen: $og-shape-radius-medium 0 $og-shape-radius-medium $og-shape-radius-medium;
+
+$og-shape-attributed-bottom-left-default: $og-shape-radius-small $og-shape-radius-small $og-shape-radius-small 0;
+$og-shape-attributed-bottom-left-larger-screen: $og-shape-radius-medium $og-shape-radius-medium  $og-shape-radius-medium 0;
+
+$og-shape-attributed-bottom-right-default: $og-shape-radius-small $og-shape-radius-small 0 $og-shape-radius-small;
+$og-shape-attributed-bottom-right-larger-screen: $og-shape-radius-medium $og-shape-radius-medium 0 $og-shape-radius-medium;
+
+$og-shape-data: (
+  circle: (
+    default: 50%,
+    smaller-screen: null,
+    larger-screen: null
+  ),
+
+  square: (
+    default: 0,
+    smaller-screen: null,
+    larger-screen: null
+  ),
+
+  brick: (
+    default: $og-shape-radius-small,
+    smaller-screen: null,
+    larger-screen: $og-shape-radius-medium
+  ),
+
+  block: (
+    default: $og-shape-radius-medium,
+    smaller-screen: null,
+    larger-screen: $og-shape-radius-large
+  ),
+  
+  attached-top: (
+    default: $og-shape-attached-top-default,
+    smaller-screen: null,
+    larger-screen: $og-shape-attached-top-larger-screen
+  ),
+
+  attached-bottom: (
+    default: $og-shape-attached-bottom-default,
+    smaller-screen: null,
+    larger-screen: $og-shape-attached-bottom-larger-screen
+  ),
+
+  attached-left: (
+    default: $og-shape-attached-left-default,
+    smaller-screen: null,
+    larger-screen: $og-shape-attached-left-larger-screen
+  ),
+
+  attached-right: (
+    default: $og-shape-attached-right-default,
+    smaller-screen: null,
+    larger-screen: $og-shape-attached-right-larger-screen
+  ),
+
+  attibuted-top-left: (
+    default: $og-shape-attributed-top-left-default,
+    smaller-screen: null,
+    larger-screen: $og-shape-attributed-top-left-larger-screen
+  ),
+
+  attibuted-top-right: (
+    default: $og-shape-attributed-top-right-default,
+    smaller-screen: null,
+    larger-screen: $og-shape-attributed-top-right-larger-screen
+  ),
+
+  attibuted-bottom-left: (
+    default: $og-shape-attributed-bottom-left-default,
+    smaller-screen: null,
+    larger-screen: $og-shape-attributed-bottom-left-larger-screen
+  ),
+
+  attibuted-bottom-right: (
+    default: $og-shape-attributed-bottom-right-default,
+    smaller-screen: null,
+    larger-screen: $og-shape-attributed-bottom-right-larger-screen
+  )
+) !default;
+
+
+

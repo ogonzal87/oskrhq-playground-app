@@ -1,0 +1,26 @@
+.entities-card__hero {
+  // background-image: url("../../assets/images/card-background-hero.png");
+  
+  max-height: $og-space-96;
+  margin-bottom: og-rem(50px);
+  border-radius: og-shape(attached-bottom, larger-screen);
+  background: og-color(background, scrim);
+
+  .entities-card__entity-image {
+    max-width: $og-space-128;
+  }
+}
+
+.entities-card__content {
+  .position-label{
+    margin-bottom: $og-space-24;
+  }
+
+  .entities-card__content-buttons {
+    display: flex;
+
+    button:first-child {
+      margin-right: $og-space-08;
+    }
+  }
+}

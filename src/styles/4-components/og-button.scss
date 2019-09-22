@@ -1,0 +1,93 @@
+$og-button-primary-background-color: og-color(background, brand);
+$og-button-primary-background-color--active: og-color(background, brand-active);
+$og-button-primary-background-color--hover: lighten(og-color(background, brand), 5);
+$og-button-m-padding: $og-space-24;
+$og-button-s-padding: $og-space-16;
+$og-button-border: none;
+$og-button-shape: $og-theme-shape-small-component-radius;
+$og-button-transitions: all og-duration(base) og-easing(base);
+
+.og-button {
+  border-radius: $og-button-shape;
+  min-width: $og-space-40;
+  border: $og-button-border;
+  transition: $og-button-transitions;
+  cursor: pointer;
+  @include og-align-horizontally();
+
+  svg {
+    padding-right: og-rem(6px);
+  }
+}
+
+.og-button--primary {
+  @extend .og-button;
+  color: og-color(text, primary-in-dark);
+  background: $og-button-primary-background-color;
+  transition: all og-easing(base) og-duration(moderate-334);
+
+  &:hover {
+    background: $og-button-primary-background-color--hover;
+  }
+
+  &:active {
+    background: $og-button-primary-background-color--active;
+  }
+}
+
+.og-button--secondary {
+  @extend .og-button;
+  color: og-color(text, secondary);
+  border: og-rem(1px) solid og-color(text, secondary);
+  background: transparent;
+
+  path:last-child {
+    fill: og-color(text, secondary);
+  }
+}
+
+.og-button--m {
+  padding: og-rem(14px) $og-space-24;
+  min-height: $og-space-40;
+  @include og-text-style-text-m($weight: bold);
+}
+
+.og-button--s {
+  padding: og-rem(6px) $og-space-16;
+  min-height: $og-space-24;
+  @include og-text-style-text-s($weight: bold);
+}
+
+.og-button--circle-m {
+  border-radius: 50%;
+  min-width: $og-space-48;
+  padding: 0;
+
+  svg {
+    padding: 0;
+  }
+}
+
+.og-button--circle-s {
+  border-radius: 50%;
+  min-width: $og-space-32;
+  padding: 0;
+
+  svg {
+    padding: 0;
+  }
+}
+
+.og-button--fluid {
+  width: 100%;
+}
+
+.og-button--fab {
+  position: fixed;
+  bottom: $og-space-12;
+  right: $og-space-12;
+  z-index: 999;
+  height: og-rem(56px);
+  width: og-rem(56px);
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20); // TODO: Change to token.
+}

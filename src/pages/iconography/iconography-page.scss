@@ -1,0 +1,28 @@
+.iconography-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: $og-space-32;
+  grid-row-gap: $og-space-32;
+  justify-items: center;
+  padding: $og-space-24;
+}
+
+.iconography-specimen {
+  padding: $og-space-08;
+  @include og-text-style-text-xs();
+}
+
+.icon-size-xsmall {
+  height: og-icon-size(xsmall);
+  width: og-icon-size(xsmall);
+}
+
+.icon-size-small {
+  height: og-icon-size(small);
+  width: og-icon-size(small);
+}
+
+.icon-size-medium {
+  height: og-icon-size(medium);
+  width: og-icon-size(medium);
+}

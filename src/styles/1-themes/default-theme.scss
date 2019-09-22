@@ -1,0 +1,100 @@
+/**
+OSKRHQ.DS Default Theme
+Hi! 👋🏼  
+Below, you will find the default theme for this Design System. 
+However, you can modify the theme's styling values with your own
+and what the UI change magically!
+*/
+
+
+/**
+Color Palette Light
+Change these color values below to your brand colors.
+You can use `null` as a value if you do not have 
+that color.
+*/
+// Brand - Primary
+$og-theme-color-primary-70: #20205E;
+$og-theme-color-primary-60: #31318E;
+$og-theme-color-primary-50: #4545C9;
+$og-theme-color-primary-40: #5252ED;
+$og-theme-color-primary-30: #6B6BEF;
+$og-theme-color-primary-20: #9797F4;
+$og-theme-color-primary-10: #B9B9F7;
+
+// Brand - Secondary 
+$og-theme-color-secondary-70: #493564;
+$og-theme-color-secondary-60: #6E4F96;
+$og-theme-color-secondary-50: #9C71D5;
+$og-theme-color-secondary-40: #B885FB;
+$og-theme-color-secondary-30: #C297FB;
+$og-theme-color-secondary-20: #D4B5FC;
+$og-theme-color-secondary-10: #E2CEFD;
+
+// Brand - Tertiary 
+$og-theme-color-tertiary-70: #174265;
+$og-theme-color-tertiary-60: #226398;
+$og-theme-color-tertiary-50: #318DD8;
+$og-theme-color-tertiary-40: #3AA6FE;
+$og-theme-color-tertiary-30: #57B3FE;
+$og-theme-color-tertiary-20: #88C9FE;
+$og-theme-color-tertiary-10: #B0DBFE;
+
+//Neutral - Used for text, borders, shadows, background, etc
+$og-theme-color-neutral-70: #2F3946;
+$og-theme-color-neutral-60: #828890;
+$og-theme-color-neutral-50: #697489;
+$og-theme-color-neutral-40: #C0C3C7;
+$og-theme-color-neutral-30: #E0E2E4;
+$og-theme-color-neutral-20: #EAEBEC;
+$og-theme-color-neutral-10: #FFFFFF;
+
+// positive - Used to communicate status or feedback to the user 
+$og-theme-color-positive-70: #15502E;
+$og-theme-color-positive-60: #1F7845;
+$og-theme-color-positive-50: #2DAA61;
+$og-theme-color-positive-40: #35C873;
+$og-theme-color-positive-30: #53D087;
+$og-theme-color-positive-20: #85DEAB;
+$og-theme-color-positive-10: #AEE9C7;
+// Negative - Used to communicate status or feedback to the user
+$og-theme-color-negative-70: #662222;
+$og-theme-color-negative-60: #993333;
+$og-theme-color-negative-50: #D94949;
+$og-theme-color-negative-40: #FF5656;
+$og-theme-color-negative-30: #FF6F6F;
+$og-theme-color-negative-20: #FF9999;
+$og-theme-color-negative-10: #FFBBBB;
+// Warning - Used to communicate status or feedback to the user
+$og-theme-color-warning-70: #654E1A;
+$og-theme-color-warning-60: #987627;
+$og-theme-color-warning-50: #D8A737;
+$og-theme-color-warning-40: #FEC541;
+$og-theme-color-warning-30: #FECD5D;
+$og-theme-color-warning-20: #FEDC8D;
+$og-theme-color-warning-10: #FEE7B3;
+// Info - Used to communicate status or feedback to the user
+$og-theme-color-info-70: #1A3561;
+$og-theme-color-info-60: #274F92;
+$og-theme-color-info-50: #3871CF;
+$og-theme-color-info-40: #4285F4;
+$og-theme-color-info-30: #5E97F5;
+$og-theme-color-info-20: #8DB5F8;
+$og-theme-color-info-10: #B3CEFA;
+
+
+// **TYPOGRAPHY**
+// Typeface
+// Change the typeface.
+// Import whatever Font Family you would like.
+@import url('https://fonts.googleapis.com/css?family=Lato:30,30i,40,40i,70,70i');
+$og-theme-font-family:      'Lato', sans-serif;
+$og-theme-base-font-size:    16px;
+
+
+// **BORDER RADIUS**
+// How round would you like your containers to be?
+$og-theme-shape-base-border-radius: og-rem(3px); 
+$og-theme-shape-small-component-radius: og-rem(50px);
+$og-theme-shape-medium-component-radius: og-rem(12px);
+$og-theme-shape-large-component-radius: og-rem(0px);

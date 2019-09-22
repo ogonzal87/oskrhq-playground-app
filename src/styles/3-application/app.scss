@@ -1,0 +1,24 @@
+$app-background-color:    og-color(background, canvas);
+$og-base-text-color:      og-color(text, primary);
+$og-brand-text-color:     og-color(text, link);
+$og-secondary-text-color: og-color(text, secondary);
+$og-base-link-text-color: $og-brand-text-color;
+
+:root {
+  font-family: $og-text-font-family;
+  font-size: $og-text-base-font-size;
+}
+
+html {
+  background-color: $app-background-color;
+  color: $og-base-text-color;
+}
+
+a {
+  color: $og-base-link-text-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: line-through;
+  }
+}

@@ -1,0 +1,38 @@
+$specimen-in-dark-background: og-color(background, canvas-dark);
+
+.border-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: $og-space-16;
+  grid-row-gap: $og-space-16;
+  justify-items: center;
+}
+
+.border-specimen {
+  padding: $og-space-08;
+  width: $og-space-96;
+  height: $og-space-96;
+  @include og-text-style-text-xs();
+}
+
+.border-specimen-in-dark {
+  width: $og-space-128;
+  height: $og-space-128;
+  background: $specimen-in-dark-background;
+  @include og-center();
+}
+
+//borders
+.border-100 {
+  @include og-border(thin, primary, solid);
+}
+.border-100-in-dark {
+  @include og-border(thin, primary-in-dark, solid);
+}
+
+.border-thick {
+  @include og-border(thick, primary, solid);
+}
+.border-thick-in-dark {
+  @include og-border(thick, primary-in-dark, solid);
+}

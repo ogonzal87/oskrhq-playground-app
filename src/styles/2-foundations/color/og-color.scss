@@ -1,0 +1,75 @@
+/* ////////////////////////
+Public Colors - Colors that are available to Developers.
+*/ ////////////////////////
+$og-color-data: (
+  background: (
+    brand: $og-theme-color-primary-40,
+    brand-active: $og-theme-color-primary-50,
+    brand-hover: $og-theme-color-primary-30,
+
+    brand-in-dark: $og-theme-color-primary-30,
+    brand-in-dark-active: $og-theme-color-primary-40,
+    brand-in-dark-hover: $og-theme-color-primary-20,
+
+    canvas: $og-theme-color-neutral-10, // Desktop/wide screen background
+    canvas-tinted: $og-theme-color-neutral-20, // Desktop/wide screen background alternate
+    canvas-shaded: $og-theme-color-neutral-30, // Mobile/narrrow screen background
+    canvas-dark: #15202b, // Alternate Canvas, equivalent to standard Canvas Dark Mode
+
+    scrim: lighten($og-theme-color-neutral-70, .5), // Applied behind Surface for blocking sheets/modals
+  ),
+
+  text: (
+    primary: $og-theme-color-neutral-70,
+    primary-disabled: $og-theme-color-neutral-40,
+    primary-in-dark: $og-theme-color-neutral-20, // For most text
+    primary-in-dark-disabled: $og-theme-color-neutral-40,
+
+    secondary: $og-theme-color-neutral-50, // For captions/metadata/asides
+    secondary-in-dark: $og-theme-color-neutral-40, // For most text
+
+    link: $og-theme-color-primary-40, // Set up to defualt to brand color to be able to adjust in a unified way
+    link-in-dark: $og-theme-color-primary-30,
+    link-active: $og-theme-color-primary-50,
+    link-in-dark-active: $og-theme-color-primary-40,
+
+    positive: $og-theme-color-positive-40,
+    positive-in-dark: $og-theme-color-positive-20,
+    positive-active: $og-theme-color-positive-30,
+    positive-in-dark-active: $og-theme-color-positive-10,
+
+    negative: $og-theme-color-negative-40,
+    negative-in-dark: $og-theme-color-negative-20,
+    negative-active: $og-theme-color-negative-30,
+    negative-in-dark-active: $og-theme-color-negative-10,
+
+    info: $og-theme-color-info-40,
+    info-in-dark: $og-theme-color-info-20,
+    info-active: $og-theme-color-info-30,
+    info-in-dark-active: $og-theme-color-info-10,
+  ),
+
+  border: (
+    primary: $og-theme-color-neutral-30,
+    primary-in-dark: $og-theme-color-neutral-10,
+
+    secondary: $og-theme-color-neutral-20,
+    secondary-in-dark: $og-theme-color-neutral-70,
+
+    brand: $og-theme-color-primary-40,
+    brand-in-dark: $og-theme-color-primary-50,
+  ),
+
+  icon: (
+    default: $og-theme-color-neutral-70,
+    default-in-dark: $og-theme-color-neutral-10,
+    positive: $og-theme-color-positive-40,
+    positive-in-dark: $og-theme-color-positive-20,
+    negative: $og-theme-color-negative-40,
+    negative-in-dark: $og-theme-color-positive-20,
+    info:  $og-theme-color-info-40,
+    info-in-dark:  $og-theme-color-info-20,
+  ),
+
+) !default;
+

@@ -1,0 +1,38 @@
+
+.article-title-block {
+  min-height: $og-space-64;
+  width: 100%;
+  background: og-color(background, scrim);
+  margin-top: $og-space-12;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  .article-title-block__title-text {
+    color: og-color(text, primary-in-dark);
+    font-weight: og-font-weight(bold);
+    margin: 0 0 $og-space-08 0 ;
+  }
+
+  .article-title-block__byline-container {
+    display: flex;
+    align-items: center;
+    img {
+      width: $og-space-16;
+    }
+
+    span {
+      margin: 0 $og-space-04;
+    }
+  }
+
+  .article-title-block__bookmark-btn {
+    background: transparent;
+    border: none;
+    height: $og-space-24;
+    width: $og-space-24;
+  }
+}
+
+
+

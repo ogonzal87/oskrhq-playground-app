@@ -1,0 +1,96 @@
+$balls-color: og-color(background, scrim);
+
+.og-motion-specimens-container {
+  display: flex;
+  flex-direction: column;
+  width: 774px;
+  justify-content: space-around;
+
+  .og-motion-specimen-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: dashed 1px og-color(border, secondary);
+    margin-bottom: $og-space-48;
+
+    .og-motion-specimen-code {
+      display: flex;
+      flex-direction: column;
+      width: 208px;
+    }
+
+    .og-motion-specimen {
+      margin-left: $og-space-16;
+      height: $og-space-48;
+      width: $og-space-48;
+      border-radius: 50%;
+      background: $balls-color;
+    }
+
+    .og-motion-specimen-duration1 {
+      transition: all og-easing(base) og-duration(fast);
+    }
+
+    .og-motion-specimen-duration2 {
+      transition: all og-easing(base) og-duration(base);
+    }
+
+    .og-motion-specimen-duration3 {
+      transition: all og-easing(base) og-duration(slow);
+    }
+
+    .og-motion-specimen-duration4 {
+      transition: all og-easing(base) og-duration(slower);
+    }
+
+    .og-motion-specimen-duration5 {
+      transition: all og-easing(base) og-duration(slowest);
+    }
+
+
+    .og-motion-specimen-easing1 {
+      background: $balls-color;
+      transition: all og-easing(base) (og-duration(slowest)*2);
+    }
+
+    .og-motion-specimen-easing2 {
+      background: $balls-color;
+      transition: all og-easing(in) (og-duration(slowest)*2);
+    }
+
+    .og-motion-specimen-easing3 {
+      background: $balls-color;
+      transition: all og-easing(out) (og-duration(slowest)*2);
+    }
+
+    // .og-motion-specimen-easing4 {
+    //   background: $balls-color;
+    //   transition: all og-easing(excite) (og-duration(slowest)*2);
+    // }
+
+    // .og-motion-specimen-easing5 {
+    //   background: $balls-color;
+    //   transition: all og-easing(overshoot) (og-duration(slowest)*2);
+    // }
+
+    // .og-motion-specimen-easing6 {
+    //   background: $balls-color;
+    //   transition: all og-easing(anticipate) (og-duration(slowest)*2);
+    // }
+
+    .og-motion-specimen-delay1 {
+      transition: transform og-easing(base) og-duration(slower);
+      transition-delay: og-delay(hurry);
+    }
+
+    .og-motion-specimen-delay2 {
+      transition: transform og-easing(base) og-duration(slower);
+      transition-delay: og-delay(wait);
+    }
+  }
+
+
+  &:hover > .og-motion-specimen-container .og-motion-specimen {
+    transform: translateX(500px);
+  }
+}

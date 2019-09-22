@@ -1,0 +1,84 @@
+.og-text-style-display-biggest {
+  @include og-text-style-display-biggest();
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.og-text-style-display-bigger {
+  @include og-text-style-display-bigger();
+}
+
+.og-text-style-display-big {
+  @include og-text-style-display-big();
+}
+
+.og-text-style-heading-xxxxl {
+  @include og-text-style-heading-xxxxl();
+}
+
+.og-text-style-heading-xxxl {
+  @include og-text-style-heading-xxxl();
+}
+
+.og-text-style-heading-xxl {
+  @include og-text-style-heading-xxl();
+}
+
+.og-text-style-heading-xl {
+  @include og-text-style-heading-xl();
+}
+
+.og-text-style-heading-l {
+  @include og-text-style-heading-l();
+}
+
+.og-text-style-heading-m {
+  @include og-text-style-heading-m();
+}
+
+.og-text-style-heading-s {
+  @include og-text-style-heading-s();
+}
+
+.og-text-style-text-l {
+  @include og-text-style-text-l();
+}
+
+.og-text-style-text-l-open {
+  @include og-text-style-text-l-open();
+}
+
+.og-text-style-text-m {
+  @include og-text-style-text-m();
+}
+
+.og-text-style-text-m-open {
+  @include og-text-style-text-m-open();
+}
+
+.og-text-style-text-s {
+  @include og-text-style-text-s();
+}
+
+.og-text-style-text-s-open {
+  @include og-text-style-text-s-open();
+}
+
+.og-text-style-text-xs {
+  @include og-text-style-text-xs();
+}
+
+.og-text-style-text-xs-open {
+  @include og-text-style-text-xs-open();
+}
+
+.og-text-style-link {
+  @include og-text-style-link();
+}
+
+a {
+  @include og-text-style-link();
+  color: og-color(text, link);
+}

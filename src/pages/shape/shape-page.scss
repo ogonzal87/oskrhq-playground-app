@@ -1,0 +1,101 @@
+.shape-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: $og-space-32;
+  grid-row-gap: $og-space-32;
+  justify-items: center;
+  padding: $og-space-24;
+}
+
+.shape-specimen {
+  padding: $og-space-08;
+  @include og-text-style-text-xs();
+}
+
+.shape-brick {
+  border-radius: og-shape(brick, default);
+}
+
+.shape-block {
+  border-radius: og-shape(block, default);
+}
+
+.shape-square {
+  @include og-border(thin, primary, solid);
+  border-radius: og-shape(square, default);
+  height: 200px;
+  width: 200px;
+}
+
+.shape-circle {
+  @include og-border(thin, primary, solid);
+  border-radius: og-shape(circle, default);
+  height: 200px;
+  width: 200px;
+}
+
+.shape-square {
+  @include og-border(thin, primary, solid);
+  border-radius: og-shape(square, default);
+  height: 200px;
+  width: 200px;
+}
+
+
+// Containers
+.shape-container-lined {
+  @include og-shape-container-surface(100, primary, brick, canvas);
+}
+
+.shape-container-canvas {
+  @include og-shape-container-canvas(100, primary, brick, canvas)
+}
+
+.shape-container-canvas-shaded {
+  @include og-shape-container-canvas-shaded(100, primary, brick, canvas-shaded)
+}
+
+.shape-container-in-dark {
+  @include og-shape-container-in-dark(100, primary, brick, canvas)
+}
+
+// Attached Shapes
+.shape-attached-top {
+  border-radius: og-shape(attached-top, larger-screen);
+  box-shadow: og-elevation(100);
+}
+
+.shape-attached-bottom {
+  border-radius: og-shape(attached-bottom, larger-screen);
+  box-shadow: og-elevation(100);
+}
+
+.shape-attached-left {
+  border-radius: og-shape(attached-left, larger-screen);
+  box-shadow: og-elevation(100);
+}
+
+.shape-attached-right {
+  border-radius: og-shape(attached-right, larger-screen);
+  box-shadow: og-elevation(100);
+}
+
+.shape-attributed-top-left {
+  border-radius: og-shape(attibuted-top-left, larger-screen);
+  box-shadow: og-elevation(100);
+}
+
+.shape-attributed-top-right {
+  border-radius: og-shape(attibuted-top-right, larger-screen);
+  box-shadow: og-elevation(100);
+}
+
+.shape-attributed-bottom-left {
+  border-radius: og-shape(attibuted-bottom-left, larger-screen);
+  box-shadow: og-elevation(100);
+}
+
+.shape-attributed-bottom-right {
+  border-radius: og-shape(attibuted-bottom-right, larger-screen);
+  box-shadow: og-elevation(100);
+}

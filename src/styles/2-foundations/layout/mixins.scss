@@ -1,0 +1,79 @@
+
+@mixin og-align-horizontally() {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+@mixin og-align-vertically() {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+@mixin og-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+// App Layout
+
+@mixin og-app-layout1() {
+  display: grid;
+  height: 100%;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 72px 96px auto 72px;
+  grid-template-areas:
+    "header"
+    "sub-header"
+    "main"
+    "footer"
+}
+
+@mixin og-app-layout2() {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "sub-header"
+    "main"
+    "footer"
+}
+
+@mixin og-app-layout3() {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 389px 1fr;
+  grid-template-rows: 72px 96px auto 72px;
+  grid-template-areas:
+    "header     header"
+    "sub-header sub-header"
+    "nav        main"
+    "footer     footer"
+}
+
+@mixin og-grid($columns: 12, $gutter: 24px) {
+  margin: $gutter;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-column-gap: $gutter;
+  grid-row-gap: $gutter;
+  // grid-template-rows: min-content 1fr;
+  // max-width: 1940px;
+}
+
+@mixin og-columns-stretch($column-start: 1, $column-end: 12) {
+  grid-column: $column-start / $column-end;
+}
+
+
+

@@ -1,0 +1,22 @@
+.elevation-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: $og-space-32;
+  grid-row-gap: $og-space-32;
+  justify-items: center;
+  padding: $og-space-24;
+}
+
+.elevation-specimen {
+  padding: $og-space-08;
+  @include og-text-style-text-xs();
+}
+
+.elevation-100 {
+  box-shadow: og-elevation(100);
+}
+
+.elevation-shadow {
+  box-shadow: og-elevation(100);
+}
+

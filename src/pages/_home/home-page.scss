@@ -1,0 +1,18 @@
+.home-page {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: $og-space-32;
+
+  .alert {
+    color: og-color(text, negative);
+  }
+
+  li {
+    @include og-text-style-text-m-open;
+  }
+  
+  h1 {
+    font-size: og-font-size(xxxlarge);
+    color: og-color(text, negative);
+  }
+}
